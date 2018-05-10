@@ -1,0 +1,3 @@
+const erte = require('./')
+
+erte()

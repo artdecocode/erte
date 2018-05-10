@@ -1,0 +1,32 @@
+{
+  "name": "erte",
+  "version": "1.0.0",
+  "description": "String difference with colour for Node.js.",
+  "main": "build",
+  "scripts": {
+    "test": "zoroaster test/spec --babel",
+    "test-watch": "zoroaster test/spec --watch --babel",
+    "build": "babel src --out-dir build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/artdecocode/erte.git"
+  },
+  "keywords": [
+    "erte"
+  ],
+  "author": "Anton <anton@adc.sh>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artdecocode/erte/issues"
+  },
+  "homepage": "https://github.com/artdecocode/erte#readme",
+  "devDependencies": {
+    "@babel/cli": "7.0.0-beta.46",
+    "@babel/core": "7.0.0-beta.46",
+    "@babel/plugin-syntax-object-rest-spread": "7.0.0-beta.46",
+    "@babel/plugin-transform-modules-commonjs": "7.0.0-beta.46",
+    "@babel/register": "7.0.0-beta.46",
+    "zoroaster": "1.1.0"
+  }
+}
