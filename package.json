@@ -6,14 +6,24 @@
   "scripts": {
     "test": "zoroaster test/spec --babel",
     "test-watch": "zoroaster test/spec --watch --babel",
-    "build": "babel src --out-dir build"
+    "build": "babel src --out-dir build",
+    "example": "node example"
   },
+  "files": [
+    "build"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/artdecocode/erte.git"
   },
   "keywords": [
-    "erte"
+    "erte",
+    "art deco",
+    "string",
+    "diff",
+    "color",
+    "colour",
+    "difference"
   ],
   "author": "Anton <anton@adc.sh>",
   "license": "MIT",
@@ -27,6 +37,10 @@
     "@babel/plugin-syntax-object-rest-spread": "7.0.0-beta.46",
     "@babel/plugin-transform-modules-commonjs": "7.0.0-beta.46",
     "@babel/register": "7.0.0-beta.46",
+    "snapshot-context": "1.1.0",
     "zoroaster": "1.1.0"
+  },
+  "dependencies": {
+    "diff": "3.5.0"
   }
 }

@@ -1,3 +1,0 @@
-const erte = require('./')
-
-erte()

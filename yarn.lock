@@ -230,6 +230,13 @@ assert-diff@1.2.5:
     assert-plus "1.0.0"
     json-diff "0.5.2"
 
+assert-diff@1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/assert-diff/-/assert-diff-1.2.6.tgz#1b44d6f24a7e3018f557768ee350ae9a732c2fc6"
+  dependencies:
+    assert-plus "1.0.0"
+    json-diff "0.5.2"
+
 assert-plus@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/assert-plus/-/assert-plus-1.0.0.tgz#f12e0f3c5d77b0b1cdd9146942e4e96c1e4dd525"
@@ -380,6 +387,10 @@ detect-libc@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-1.0.3.tgz#fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b"
 
+diff@3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/diff/-/diff-3.5.0.tgz#800c0dd1e0a8bfbc95835c202ad220fe317e5a12"
+
 difflib@~0.2.1:
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/difflib/-/difflib-0.2.4.tgz#b5e30361a6db023176d562892db85940a718f47e"
@@ -391,6 +402,12 @@ dreamopt@~0.6.0:
   resolved "https://registry.yarnpkg.com/dreamopt/-/dreamopt-0.6.0.tgz#d813ccdac8d39d8ad526775514a13dda664d6b4b"
   dependencies:
     wordwrap ">=0.0.2"
+
+erotic@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/erotic/-/erotic-0.2.0.tgz#4162384016281b1dd313bf1ecc87576f92d8e509"
+  dependencies:
+    clean-stack "1.3.0"
 
 es5-ext@0.8.x:
   version "0.8.2"
@@ -704,6 +721,12 @@ make-dir@^1.0.0:
   dependencies:
     pify "^3.0.0"
 
+makepromise@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/makepromise/-/makepromise-1.1.1.tgz#4e03bf98c25ca96a4223b0f2e280e3b3a6f9dea4"
+  dependencies:
+    erotic "0.2.0"
+
 micromatch@^2.1.5, micromatch@^2.3.11:
   version "2.3.11"
   resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-2.3.11.tgz#86677c97d1720b363431d04d0d15293bd38c1565"
@@ -975,6 +998,12 @@ regex-cache@^0.4.2:
   dependencies:
     is-equal-shallow "^0.1.3"
 
+reloquent@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/reloquent/-/reloquent-0.2.0.tgz#0b9e5f02cc9d19466474a90a40d057f97312bfde"
+  dependencies:
+    promto "1.0.1"
+
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/remove-trailing-separator/-/remove-trailing-separator-1.1.0.tgz#c24bce2a283adad5bc3f58e0d48249b92379d8ef"
@@ -992,6 +1021,10 @@ resolve@^1.3.2:
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.7.1.tgz#aadd656374fd298aee895bc026b8297418677fd3"
   dependencies:
     path-parse "^1.0.5"
+
+restream@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/restream/-/restream-1.2.0.tgz#fd13b031a54e80cc65d1878c43149f1b3a40efbb"
 
 rimraf@^2.6.1:
   version "2.6.2"
@@ -1030,6 +1063,15 @@ signal-exit@^3.0.0:
 slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
+
+snapshot-context@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/snapshot-context/-/snapshot-context-1.1.0.tgz#e2fe75becdc4b5d539234b61db7855392e0f3f87"
+  dependencies:
+    assert-diff "1.2.6"
+    diff "3.5.0"
+    reloquent "0.2.0"
+    wrote "1.4.0"
 
 source-map-support@^0.4.2:
   version "0.4.18"
@@ -1114,6 +1156,14 @@ wordwrap@>=0.0.2:
 wrappy@1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
+
+wrote@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/wrote/-/wrote-1.4.0.tgz#68c95aa1d62e425c8cdf03fa26baa3acca2eed8f"
+  dependencies:
+    catchment "2.0.1"
+    makepromise "1.1.1"
+    restream "1.2.0"
 
 yallist@^3.0.0, yallist@^3.0.2:
   version "3.0.2"

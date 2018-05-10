@@ -1,6 +1,49 @@
+import { diffChars } from 'diff'
+
+function c(t, color) {
+  switch (color) {
+  case 'red':
+    return `\x1b[31m${t}\x1b[0m`
+  case 'green':
+    return `\x1b[32m${t}\x1b[0m`
+  case 'grey':
+    return `\x1b[90m${t}\x1b[0m`
+  default:
+    return t
+  }
+}
+
+function b(t, color) {
+  switch (color) {
+  case 'red':
+    return `\x1b[41m${t}\x1b[0m`
+  case 'green':
+    return `\x1b[42m${t}\x1b[0m`
+  default:
+    return t
+  }
+}
+
 /**
- * This is the main package file.
+ * Compares two strings and outputs a coloured version where strings don't match.
+ * @param {string} source A string to compare.
+ * @param {string} target Target string to compare with.
+ * @returns {string} A string which uses shell-codes to highligh differences.
  */
-export default function erte() {
-  console.log('erte called')
+export default function erte(source, target) {
+  const d = diffChars(source, target)
+  const m = d.map(({ added, removed, value }) => {
+    let p
+    const s = value.split(' ')
+    if (added) {
+      p = s.map(t => c(t, 'green')).join(b(' ', 'green'))
+    } else if (removed) {
+      p = s.map(t => c(t, 'red')).join(b(' ', 'red'))
+    } else {
+      p = c(value, 'grey')
+    }
+    return p
+  })
+  const s = m.join('')
+  return s
 }
