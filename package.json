@@ -4,6 +4,7 @@
   "description": "String difference with colour for Node.js.",
   "main": "build",
   "scripts": {
+    "t": "zoroaster --babel --watch",
     "test": "zoroaster test/spec --babel",
     "test-watch": "zoroaster test/spec --watch --babel",
     "build": "babel src --out-dir build",
