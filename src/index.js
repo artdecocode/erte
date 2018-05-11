@@ -1,6 +1,11 @@
 import { diffChars } from 'diff'
 
-function c(t, color) {
+/**
+ * Color foreground
+ * @param {string} t
+ * @param {'red'|'green'|'grey'} color
+ */
+export function c(t, color) {
   switch (color) {
   case 'red':
     return `\x1b[31m${t}\x1b[0m`
@@ -13,7 +18,12 @@ function c(t, color) {
   }
 }
 
-function b(t, color) {
+/**
+ * Color background
+ * @param {string} t
+ * @param {'red'|'green'} color
+ */
+export function b(t, color) {
   switch (color) {
   case 'red':
     return `\x1b[41m${t}\x1b[0m`
