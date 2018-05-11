@@ -8,7 +8,10 @@
     "test": "zoroaster test/spec --babel",
     "test-watch": "zoroaster test/spec --watch --babel",
     "build": "babel src --out-dir build",
-    "example": "node example"
+    "example": "node example",
+    "example-c": "yarn e example/c.js",
+    "example-b": "yarn e example/b.js",
+    "e": "node example/run"
   },
   "files": [
     "build"

@@ -1,6 +1,6 @@
-# erte
+<a href="https://npmjs.org/packages/erotic"><img align="right" src="doc/woman.jpg" width="225" alt="erte" />
 
-![erte](doc/woman.jpg)
+# erte</a>
 
 `erte` is an npm package to show string difference with colour.
 
@@ -35,6 +35,43 @@ console.log(grey)
 ![missing](doc/missing.png)
 
 ![same](doc/same.png)
+
+
+## c(s: string, t:'red'|'green'|'grey'): string
+
+This function will color the foreground with red, green or grey colors.
+
+```js
+/** yarn example-c */
+import { c } from 'erte'
+
+const redText = c('736 41377', 'red')
+console.log(`.${redText}`) // eslint-disable-line
+```
+
+```sh
+yarn example-c
+```
+
+![c](doc/c.png)
+
+## b(s: string, t:'red'|'green'): string
+
+This function will color the background with red or green colors.
+
+```js
+/** yarn example-b */
+import { b } from 'erte'
+
+const greenText = b('73649', 'green')
+console.log(`.${greenText}`) // eslint-disable-line
+```
+
+```sh
+yarn example-b
+```
+
+![b](doc/b.png)
 
 ---
 
