@@ -3,7 +3,7 @@
 ### 1.1.0
 
 - [tests] remove bug from the `same` test where `missing` was tested as snapshot instead.
-- [feature] export `color` function
+- [feature] export `c` and `b` functions for foreground and background colors.
 
 ## 10 May 2018
 
