@@ -3,10 +3,17 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.c = c;
+exports.b = b;
 exports.default = erte;
 
 var _diff = require("diff");
 
+/**
+ * Color foreground
+ * @param {string} t
+ * @param {'red'|'green'|'grey'} color
+ */
 function c(t, color) {
   switch (color) {
     case 'red':
@@ -22,6 +29,12 @@ function c(t, color) {
       return t;
   }
 }
+/**
+ * Color background
+ * @param {string} t
+ * @param {'red'|'green'} color
+ */
+
 
 function b(t, color) {
   switch (color) {
