@@ -2,6 +2,7 @@
 
 ### 1.1.0
 
+- [doc] move image to right, JSDoc
 - [tests] remove bug from the `same` test where `missing` was tested as snapshot instead.
 - [feature] export `c` and `b` functions for foreground and background colors.
 
