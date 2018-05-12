@@ -1,5 +1,9 @@
 ## 12 May 2018
 
+### 1.1.1
+
+- [doc] add badge
+
 ### 1.1.0
 
 - [doc] move image to right, JSDoc

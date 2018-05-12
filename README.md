@@ -2,6 +2,8 @@
 
 # erte</a>
 
+[![npm version](https://badge.fury.io/js/erte.svg)](https://badge.fury.io/js/erte)
+
 `erte` is an npm package to show string difference with colour.
 
 ```sh
