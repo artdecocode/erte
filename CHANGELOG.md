@@ -1,3 +1,11 @@
+## 16 January 2019
+
+### 1.1.5
+
+- [feature] Add more colors.
+- [package] Add `module` field.
+- [package] Build with [ÀLaMode](https://alamode.cc)
+
 ## 12 May 2018
 
 ### 1.1.1
