@@ -1,0 +1,4 @@
+<types>
+  <type type="('black'|'red'|'green'|'yellow'|'blue'|'magenta'|'cyan'|'white'|'grey')" name="Color" desc="The color.">
+  </type>
+</types>

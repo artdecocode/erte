@@ -26,7 +26,7 @@ const backgroundColors = {
 /**
  * Color the foreground.
  * @param {string} string The string to color.
- * @param {('black'|'red'|'green'|'yellow'|'blue'|'magenta'|'cyan'|'white'|'grey'|number)} color The color to apply.
+ * @param {Color} color The color to apply.
  */
        function c(string, color) {
   const c = colors[color]
@@ -37,7 +37,7 @@ const backgroundColors = {
 /**
  * Color the background.
  * @param {string} string The string to color.
- * @param {'red'|'green'} color The color to apply.
+ * @param {Color} color The color to apply.
  */
        function b(string, color) {
   const c = backgroundColors[color]
@@ -68,6 +68,12 @@ const backgroundColors = {
   const s = m.join('')
   return s
 }
+
+/* documentary types/index.xml */
+/**
+ * @typedef {('black'|'red'|'green'|'yellow'|'blue'|'magenta'|'cyan'|'white'|'grey')} Color The color.
+ */
+
 
 module.exports = erte
 module.exports.c = c

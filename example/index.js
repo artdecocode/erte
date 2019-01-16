@@ -1,2 +1,2 @@
-require('@babel/register')
-require('./example')
+require('alamode')()
+require(`../${process.argv[2]}`)

@@ -4,10 +4,10 @@
 
 [![npm version](https://badge.fury.io/js/depack.svg)](https://npmjs.org/package/depack)
 
-`erte` is an npm package to show string difference with colour.
+`erte` Colors Strings' Foreground And Background And Shows String Difference With Color.
 
 ```sh
-yarn add erte
+yarn add -E erte
 ```
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/0.svg?sanitize=true"></a></p>
@@ -16,28 +16,29 @@ yarn add erte
 
 - [Table Of Contents](#table-of-contents)
 - [API](#api)
-- [`erte(source: string, target: string): string`](#ertesource-string-target-string-string)
-- [c(s: string, t:'red'|'green'|'grey'): string](#cs-string-tredgreengrey-string)
-- [b(s: string, t:'red'|'green'): string](#bs-string-tredgreen-string)
+  * [`Color`](#type-color)
+- [`erte(source: string, target: string): string`](#ertesource-stringtarget-string-string)
+- [`c(string: string, color: Color): string`](#cstring-stringcolor-color-string)
+- [`b(string: string, color: Color): string`](#bstring-stringcolor-color-string)
 - [Copyright](#copyright)
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
 
-
-
 ## API
 
-The package is available by importing its default function:
+The package is available by importing its default and named functions:
 
 ```js
-import erte from 'erte'
+import erte, { c, b } from 'erte'
 ```
+
+`('black'|'red'|'green'|'yellow'|'blue'|'magenta'|'cyan'|'white'|'grey')` __<a name="type-color">`Color`</a>__: The color.
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
 
-## `erte(source: string, target: string): string`
+## `erte(`<br/>&nbsp;&nbsp;`source: string,`<br/>&nbsp;&nbsp;`target: string,`<br/>`): string`
 
-This function will compare the strings using [`diff`][2] package, and color the differences with green or red.
+Compares the strings using the [`diff`][2] package, and colors the differences with green or red.
 
 ```js
 import erte from 'erte'
@@ -55,6 +56,11 @@ console.log(red)
 const grey = erte(s, s)
 console.log(grey)
 ```
+```
+[90mtest this string[0m[32m[0m[42m [0m[32mwith[0m[42m [0m[32mextra[0m[42m [0m[32mdata[0m
+[90mtest this[0m[31m[0m[41m [0m[31mstring[0m
+[90mtest this string[0m
+```
 
 ![extra](doc/extra.png)
 
@@ -64,46 +70,37 @@ console.log(grey)
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true"></a></p>
 
-## c(s: string, t:'red'|'green'|'grey'): string
+## `c(`<br/>&nbsp;&nbsp;`string: string,`<br/>&nbsp;&nbsp;`color: Color,`<br/>`): string`
 
-This function will color the foreground with red, green or grey colors.
+Colors the foreground using an ANSI sequence.
 
 ```js
 /** yarn example-c */
-import { c } from 'erte'
+import { c } from '..'
 
 const redText = c('RED ALERT', 'red')
-console.log(`.${redText}`) // eslint-disable-line
-```
-
-```sh
-yarn example-c
+console.log(redText)
 ```
 
 ![c](doc/c.png)
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true"></a></p>
 
-## b(s: string, t:'red'|'green'): string
+## `b(`<br/>&nbsp;&nbsp;`string: string,`<br/>&nbsp;&nbsp;`color: Color,`<br/>`): string`
 
-This function will color the background with red or green colors.
+Colors the background with specified ANSI color.
 
 ```js
 /** yarn example-b */
 import { b } from 'erte'
 
 const greenText = b('VEGAN', 'green')
-console.log(`.${greenText}`) // eslint-disable-line
-```
-
-```sh
-yarn example-b
+console.log(greenText)
 ```
 
 ![b](doc/b.png)
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true"></a></p>
-
 
 ## Copyright
 

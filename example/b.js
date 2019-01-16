@@ -1,5 +1,5 @@
 /** yarn example-b */
-import { b } from '..'
+import { b } from '../src'
 
 const greenText = b('VEGAN', 'green')
-console.log(greenText) // eslint-disable-line
+console.log(greenText)

@@ -2,4 +2,4 @@
 import { c } from '..'
 
 const redText = c('RED ALERT', 'red')
-console.log(redText) // eslint-disable-line
+console.log(redText)

@@ -10,6 +10,7 @@
     "test-build": "ALAMODE_ENV=test-build yarn t test/spec",
     "b": "alamode src -o build -s",
     "doc": "doc documentary -o README.md",
+    "d": "doc src/index.js -g",
     "example": "node example",
     "example-c": "yarn e example/c.js",
     "example-b": "yarn e example/b.js",

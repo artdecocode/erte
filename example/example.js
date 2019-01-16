@@ -1,4 +1,4 @@
-import erte from '..'
+import erte from '../src'
 
 const s = 'test this string'
 const e = 'test this string with extra data'

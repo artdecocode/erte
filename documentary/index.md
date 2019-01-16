@@ -4,10 +4,10 @@
 
 %NPM: depack%
 
-`erte` is an npm package to show string difference with colour.
+`erte` Colors Strings' Foreground And Background And Shows String Difference With Color.
 
 ```sh
-yarn add erte
+yarn add -E erte
 ```
 
 %~%
@@ -17,4 +17,3 @@ yarn add erte
 %TOC%
 
 %~%
-
