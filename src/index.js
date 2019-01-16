@@ -1,37 +1,48 @@
 import { diffChars } from 'diff'
 
-/**
- * Color foreground
- * @param {string} t
- * @param {'red'|'green'|'grey'} color
- */
-export function c(t, color) {
-  switch (color) {
-  case 'red':
-    return `\x1b[31m${t}\x1b[0m`
-  case 'green':
-    return `\x1b[32m${t}\x1b[0m`
-  case 'grey':
-    return `\x1b[90m${t}\x1b[0m`
-  default:
-    return t
-  }
+const colors = {
+  black: 30,
+  red: 31,
+  green: 32,
+  yellow: 33,
+  blue: 34,
+  magenta: 35,
+  cyan: 36,
+  white: 37,
+  grey: 90,
+}
+
+const backgroundColors = {
+  black: 40,
+  red: 41,
+  green: 42,
+  yellow: 43,
+  blue: 44,
+  magenta: 45,
+  cyan: 46,
+  white: 47,
 }
 
 /**
- * Color background
- * @param {string} t
- * @param {'red'|'green'} color
+ * Color the foreground.
+ * @param {string} string The string to color.
+ * @param {('black'|'red'|'green'|'yellow'|'blue'|'magenta'|'cyan'|'white'|'grey'|number)} color The color to apply.
  */
-export function b(t, color) {
-  switch (color) {
-  case 'red':
-    return `\x1b[41m${t}\x1b[0m`
-  case 'green':
-    return `\x1b[42m${t}\x1b[0m`
-  default:
-    return t
-  }
+export function c(string, color) {
+  const c = colors[color]
+  if (!c) return string
+  return `\x1b[${c}m${string}\x1b[0m`
+}
+
+/**
+ * Color the background.
+ * @param {string} string The string to color.
+ * @param {'red'|'green'} color The color to apply.
+ */
+export function b(string, color) {
+  const c = backgroundColors[color]
+  if (!c) return string
+  return `\x1b[${c}m${string}\x1b[0m`
 }
 
 /**

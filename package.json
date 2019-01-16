@@ -4,10 +4,11 @@
   "description": "String difference with colour for Node.js.",
   "main": "build",
   "scripts": {
-    "t": "zoroaster --babel --watch",
-    "test": "zoroaster test/spec --babel",
-    "test-watch": "zoroaster test/spec --watch --babel",
-    "build": "babel src --out-dir build",
+    "t": "zoroaster -a",
+    "test": "yarn t test/spec",
+    "test-build": "ALAMODE_ENV=test-build yarn t test/spec",
+    "b": "alamode src -o build -s",
+    "doc": "doc documentary -o README.md",
     "example": "node example",
     "example-c": "yarn e example/c.js",
     "example-b": "yarn e example/b.js",
@@ -36,15 +37,11 @@
   },
   "homepage": "https://github.com/artdecocode/erte#readme",
   "devDependencies": {
-    "@babel/cli": "7.0.0-beta.46",
-    "@babel/core": "7.0.0-beta.46",
-    "@babel/plugin-syntax-object-rest-spread": "7.0.0-beta.46",
-    "@babel/plugin-transform-modules-commonjs": "7.0.0-beta.46",
-    "@babel/register": "7.0.0-beta.46",
-    "snapshot-context": "1.1.2",
-    "zoroaster": "1.1.0"
+    "alamode": "1.6.1",
+    "snapshot-context": "2.0.4",
+    "zoroaster": "3.6.6"
   },
   "dependencies": {
-    "diff": "3.5.0"
+    "diff": "4.0.1"
   }
 }

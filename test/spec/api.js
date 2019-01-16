@@ -1,5 +1,5 @@
 import { equal } from 'zoroaster/assert'
-import api, { c, b } from '../..'
+import api, { c, b } from '../../src'
 
 const T = {
   'runs the exported api'() {
