@@ -1,3 +1,9 @@
+## 24 January 2019
+
+### 1.1.6
+
+- [fix] Make Google Closure Compiler friendly with quoted props.
+
 ## 16 January 2019
 
 ### 1.1.5
