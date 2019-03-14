@@ -57,9 +57,13 @@ const backgroundColors = {
     let p
     const s = value.split(' ')
     if (added) {
-      p = s.map(t => c(t, 'green')).join(b(' ', 'green'))
+      p = s.map(t => {
+        return t.replace(/\n$/mg, '⏎\n')
+      }).map(t => c(t, 'green')).join(b(' ', 'green'))
     } else if (removed) {
-      p = s.map(t => c(t, 'red')).join(b(' ', 'red'))
+      p = s.map(t => {
+        return t.replace(/\n$/mg, '⏎\n')
+      }).map(t => c(t, 'red')).join(b(' ', 'red'))
     } else {
       p = c(value, 'grey')
     }

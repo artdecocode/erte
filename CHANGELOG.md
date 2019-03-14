@@ -12,6 +12,24 @@
 - [package] Add `module` field.
 - [package] Build with [ÀLaMode](https://alamode.cc)
 
+## 26 May 2018
+
+### 1.1.4
+
+- [build] source maps
+- [test] test build, class context
+- [package] artdeco eslint
+
+## 15 May 2018
+
+### 1.1.3
+
+- [fix] correct order when replacing new lines.
+
+### 1.1.2
+
+- [feature] indicate new lines better
+
 ## 12 May 2018
 
 ### 1.1.1
