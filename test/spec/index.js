@@ -1,12 +1,11 @@
-import context, { SnapshotContext } from 'snapshot-context' // eslint-disable-line no-unused-vars
-import { resolve } from 'path'
+import SnapshotContext from 'snapshot-context'
 import erte from '../../src'
 
-const SNAPSHOT_DIR = resolve(__dirname, '../snapshots')
+const SNAPSHOT_DIR = 'test/snapshot'
 
 /** @type {Object.<string, (ctx: SnapshotContext)>} */
 const T = {
-  context,
+  context: SnapshotContext,
   async 'returns a string with extra text highlighted with green'({ setDir, test }) {
     setDir(SNAPSHOT_DIR)
     const s = 'test'
@@ -27,6 +26,13 @@ const T = {
     const t = 'test'
     const res = erte(s, t)
     await test('same.txt', res)
+  },
+  async 'prints new lines'({ setDir, test }) {
+    setDir(SNAPSHOT_DIR)
+    const s = 'test\n'
+    const t = 'test'
+    const res = erte(s, t)
+    await test('new-lines.txt', res)
   },
 }
 
