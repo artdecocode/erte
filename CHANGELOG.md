@@ -1,5 +1,11 @@
 ## 24 January 2019
 
+### 1.1.7
+
+- [fix] Restore missing new line handling.
+
+## 24 January 2019
+
 ### 1.1.6
 
 - [fix] Make Google Closure Compiler friendly with quoted props.
