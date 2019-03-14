@@ -7,7 +7,7 @@
   "scripts": {
     "t": "zoroaster -a",
     "test": "yarn t test/spec",
-    "test-build": "ALAMODE_ENV=test-build yarn t test/spec",
+    "test-build": "ALAMODE_ENV=test-build yarn test",
     "b": "alamode src -o build -s",
     "doc": "doc documentary -o README.md",
     "d": "doc src/index.js -g",
@@ -40,9 +40,9 @@
   },
   "homepage": "https://github.com/artdecocode/erte#readme",
   "devDependencies": {
-    "alamode": "1.6.1",
+    "alamode": "1.8.4",
     "snapshot-context": "2.0.4",
-    "zoroaster": "3.6.6"
+    "zoroaster": "3.8.2"
   },
   "dependencies": {
     "diff": "4.0.1"

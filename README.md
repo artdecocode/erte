@@ -57,9 +57,9 @@ const grey = erte(s, s)
 console.log(grey)
 ```
 ```
-[90mtest this string[0m[32m[0m[42m [0m[32mwith[0m[42m [0m[32mextra[0m[42m [0m[32mdata[0m
-[90mtest this[0m[31m[0m[41m [0m[31mstring[0m
-[90mtest this string[0m
+test this string with extra data
+test this string
+test this string
 ```
 
 ![extra](doc/extra.png)
