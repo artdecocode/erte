@@ -32,7 +32,7 @@ The package is available by importing its default and named functions:
 import erte, { c, b } from 'erte'
 ```
 
-`('black'|'red'|'green'|'yellow'|'blue'|'magenta'|'cyan'|'white'|'grey')` __<a name="type-_ertecolor">`_erte.Color`</a>__: The color.
+`('black'|'red'|'green'|'yellow'|'blue'|'magenta'|'cyan'|'white'|'grey')` __<a name="type-_ertecolor">`_erte.Color`</a>__: The color to apply.
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
 
