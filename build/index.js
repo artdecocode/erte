@@ -1,4 +1,4 @@
-const { diffChars } = require('diff');
+const Diff = require('./diff');
 
 const colors = {
   'black': 30,
@@ -26,7 +26,7 @@ const backgroundColors = {
 /**
  * Color the foreground.
  * @param {string} string The string to color.
- * @param {Color} color The color to apply.
+ * @param {_erte.Color} color The color to apply.
  */
        function c(string, color) {
   const cc = colors[color]
@@ -37,7 +37,7 @@ const backgroundColors = {
 /**
  * Color the background.
  * @param {string} string The string to color.
- * @param {Color} color The color to apply.
+ * @param {_erte.Color} color The color to apply.
  */
        function b(string, color) {
   const cc = backgroundColors[color]
@@ -52,7 +52,8 @@ const backgroundColors = {
  * @returns {string} A string which uses shell-codes to highligh differences.
  */
                function erte(source, target) {
-  const d = diffChars(source, target)
+  const diff = new Diff()
+  const d = diff.diff(source, target)
   const m = d.map(({ added, removed, value }) => {
     let p
     const s = value.split(' ')
@@ -75,7 +76,12 @@ const backgroundColors = {
 
 /* documentary types/index.xml */
 /**
- * @typedef {('black'|'red'|'green'|'yellow'|'blue'|'magenta'|'cyan'|'white'|'grey')} Color The color.
+ * @suppress {nonStandardJsDocs}
+ * @typedef {_erte.Color} Color The color to apply.
+ */
+/**
+ * @suppress {nonStandardJsDocs}
+ * @typedef {('black'|'red'|'green'|'yellow'|'blue'|'magenta'|'cyan'|'white'|'grey')} _erte.Color The color to apply.
  */
 
 
