@@ -1,3 +1,10 @@
+## 29 April 2019
+
+### [1.2.0](https://github.com/artdecocode/erte/compare/v1.1.7...v1.2.0)
+
+- [package] Vendor `diff` package's source module modified to remove callback and fix _GCC_ warning of unused property in self.
+- [externs] Manually write externs to make `Color` a string.
+
 ## 24 January 2019
 
 ### 1.1.7
