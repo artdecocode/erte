@@ -1,8 +1,8 @@
-/* typal types/index.xml */
+// /* -typal types/index.xml */
 /** @const */
 var _erte = {}
 /**
  * The color.
- * @typedef {('black'|'red'|'green'|'yellow'|'blue'|'magenta'|'cyan'|'white'|'grey')}
+ * @typedef {string}
  */
 _erte.Color

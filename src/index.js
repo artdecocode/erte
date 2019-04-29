@@ -77,9 +77,9 @@ export default function erte(source, target) {
 /* documentary types/index.xml */
 /**
  * @suppress {nonStandardJsDocs}
- * @typedef {_erte.Color} Color The color.
+ * @typedef {_erte.Color} Color The color to apply.
  */
 /**
  * @suppress {nonStandardJsDocs}
- * @typedef {('black'|'red'|'green'|'yellow'|'blue'|'magenta'|'cyan'|'white'|'grey')} _erte.Color The color.
+ * @typedef {('black'|'red'|'green'|'yellow'|'blue'|'magenta'|'cyan'|'white'|'grey')} _erte.Color The color to apply.
  */

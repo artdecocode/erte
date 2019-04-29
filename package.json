@@ -9,6 +9,7 @@
     "test": "yarn t test/spec",
     "test-build": "ALAMODE_ENV=test-build yarn test",
     "b": "alamode src -o build -s",
+    "depack": "depack depack/erte.js -o depack/erte_.js -c -a -p --externs externs.js",
     "doc": "doc documentary -o README.md",
     "d": "yarn-s d1 externs",
     "example": "node example",

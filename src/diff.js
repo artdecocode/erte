@@ -1,6 +1,7 @@
 /**
- * @license
- * BSD License, Copyright (c) 2009-2015, Kevin Decker <kpdecker@gmail.com>
+ * @license diff package https://github.com/kpdecker/jsdiff
+ * BSD License
+ * Copyright (c) 2009-2015, Kevin Decker <kpdecker@gmail.com>
  */
 export default class Diff {
   diff(oldString, newString) {
@@ -61,7 +62,7 @@ export default class Diff {
 
         // If we have hit the end of both strings, then we are done
         if (basePath.newPos + 1 >= newLen && oldPos + 1 >= oldLen) {
-          return buildValues(self, basePath.components, newString, oldString, self.useLongestToken)
+          return buildValues(self, basePath.components, newString, oldString)
         } else {
           // Otherwise track this path as a potential candidate and continue.
           bestPath[diagonalPath] = basePath
@@ -133,7 +134,7 @@ export default class Diff {
   }
 }
 
-function buildValues(diff, components, newString, oldString, useLongestToken) {
+function buildValues(diff, components, newString, oldString) {
   let componentPos = 0,
     componentLen = components.length,
     newPos = 0,
@@ -142,7 +143,7 @@ function buildValues(diff, components, newString, oldString, useLongestToken) {
   for (; componentPos < componentLen; componentPos++) {
     let component = components[componentPos]
     if (!component.removed) {
-      if (!component.added && useLongestToken) {
+      if (!component.added) {
         let value = newString.slice(newPos, newPos + component.count)
         value = value.map(function(v, i) {
           let oldValue = oldString[oldPos + i]
