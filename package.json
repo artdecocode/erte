@@ -10,16 +10,20 @@
     "test-build": "ALAMODE_ENV=test-build yarn test",
     "b": "alamode src -o build -s",
     "doc": "doc documentary -o README.md",
-    "d": "doc src/index.js -g",
+    "d": "yarn-s d1 externs",
     "example": "node example",
     "example-c": "yarn e example/c.js",
     "example-b": "yarn e example/b.js",
-    "e": "node example/run"
+    "e": "alanode",
+    "externs": "typal externs.js -e",
+    "d1": "typal src -c"
   },
   "files": [
     "build",
-    "src"
+    "src",
+    "externs.js"
   ],
+  "externs": "externs.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/artdecocode/erte.git"
@@ -40,11 +44,10 @@
   },
   "homepage": "https://github.com/artdecocode/erte#readme",
   "devDependencies": {
-    "alamode": "1.8.4",
-    "snapshot-context": "2.0.4",
-    "zoroaster": "3.8.2"
+    "alamode": "2.0.0",
+    "snapshot-context": "2.2.2",
+    "yarn-s": "^1.1.0",
+    "zoroaster": "3.13.0"
   },
-  "dependencies": {
-    "diff": "4.0.1"
-  }
+  "dependencies": {}
 }

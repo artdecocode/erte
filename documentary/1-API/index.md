@@ -19,8 +19,8 @@ import erte, { c, b } from 'erte'
 
 Compares the strings using the [`diff`][2] package, and colors the differences with green or red.
 
-%EXAMPLE: example/example.js, ../src => erte%
-%FORK example example/example%
+%EXAMPLE: example, ../src => erte%
+%FORK example%
 
 ![extra](doc/extra.png)
 

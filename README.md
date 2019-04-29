@@ -16,7 +16,7 @@ yarn add -E erte
 
 - [Table Of Contents](#table-of-contents)
 - [API](#api)
-  * [`Color`](#type-color)
+  * [`_erte.Color`](#type-_ertecolor)
 - [`erte(source: string, target: string): string`](#ertesource-stringtarget-string-string)
 - [`c(string: string, color: Color): string`](#cstring-stringcolor-color-string)
 - [`b(string: string, color: Color): string`](#bstring-stringcolor-color-string)
@@ -32,7 +32,7 @@ The package is available by importing its default and named functions:
 import erte, { c, b } from 'erte'
 ```
 
-`('black'|'red'|'green'|'yellow'|'blue'|'magenta'|'cyan'|'white'|'grey')` __<a name="type-color">`Color`</a>__: The color.
+`('black'|'red'|'green'|'yellow'|'blue'|'magenta'|'cyan'|'white'|'grey')` __<a name="type-_ertecolor">`_erte.Color`</a>__: The color.
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
 
@@ -104,11 +104,30 @@ console.log(greenText)
 
 ## Copyright
 
-(c) [Art Deco][1] 2019
+The `diff` package author: [Kevin Decker](https://github.com/kpdecker/jsdiff).
+
+---
+
+<table>
+  <tr>
+    <th>
+      <a href="https://artd.eco">
+        <img src="https://raw.githubusercontent.com/wrote/wrote/master/images/artdeco.png" alt="Art Deco" />
+      </a>
+    </th>
+    <th>© <a href="https://artd.eco">Art Deco</a>   2019</th>
+    <th>
+      <a href="https://www.technation.sucks" title="Tech Nation Visa">
+        <img src="https://raw.githubusercontent.com/artdecoweb/www.technation.sucks/master/anim.gif"
+          alt="Tech Nation Visa" />
+      </a>
+    </th>
+    <th><a href="https://www.technation.sucks">Tech Nation Visa Sucks</a></th>
+  </tr>
+</table>
 
 [Artwork by Erte][3].
 
-[1]: https://artd.eco
 [2]: https://npmjs.org/package/diff
 [3]: http://www.erte.com
 

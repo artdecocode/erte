@@ -1,4 +1,4 @@
-<types>
+<types namespace="_erte">
   <type type="('black'|'red'|'green'|'yellow'|'blue'|'magenta'|'cyan'|'white'|'grey')" name="Color" desc="The color.">
   </type>
 </types>
